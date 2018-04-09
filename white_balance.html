@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.video iframe {
+}
+
+body {
+    padding: 50px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.paper {
+    padding: 10px;
+    text-align: left;
+    background: #E7E7E7;
+}	
+.paper h2{
+    margin-top: 40px;
+	font-size: 30px;
+}
+.paper h3{
+    margin-top: 20px;
+	font-size: 20px;
+}
+.video {
+    padding: 10px;
+    text-align: left;
+    background: white;
+}	
+.video h2{
+    margin-top: 40px;
+	font-size: 30px;
+}
+.video h3{
+    margin-top: 20px;
+	font-size: 20px;
+}	
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+	
+.clearfix {
+    overflow: auto;
+}
+
+.img2 {
+    float: center;
+	padding-top:20px;
+	padding-right:20px;
+}	
+
+.img1 {
+	float: center;
+	padding-top: 20px;
+    padding: 20px;
+}
+
+p{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	}
+p.a{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	font-size: 15px;
+	}
+p.b{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	}
+	}
+h1{
+	font-family:  "Myriad Pro";
+	}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+a {
+	font-family: "Myriad Pro"
+	font-size: 15px;	
+	}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>White Balance under Mixed Illumination using Flash Photography</h1>
+  <p>Real-world illumination is often a complex spatially-varying combination of multiple illuminants. In this work, we present a technique to white-balance images captured in such illumination by leveraging flash photography. Even though this problem is severely ill-posed, we show that using two images -- captured with and without flash lighting -- leads to a closed form solution for spatially-varying mixed illumination. Our solution is completely automatic and makes no assumptions about the number or nature of the illuminants. We also propose an extension of our scheme to handle practical challenges such as shadows, specularities, as well as the camera and scene motion. We evaluate our technique on datasets captured in both the laboratory and the real-world, and show that it significantly outperforms a number of previous white balance algorithms. </p>
+<img class="img2" src="iccp16_overview.png" alt="overview", width = "800">
+</div>
+<div class="paper">	
+<h2>Paper</h2>
+<p>
+	Zhuo Hui, <a href="http://www.eecs.harvard.edu/~kalyans/"> Kalyan Sunkavalli</a>, Sunil Hadap, and <a href="http://users.ece.cmu.edu/~saswin/"> Aswin C. Sankaranarayanan</a>
+</p>
+<p>
+	ICCP 2016
+</p>
+<a href="http://imagesci.ece.cmu.edu/files/paper/2016/whitebalance_iccp16.pdf">
+	<img class="img1" src="iccp16_thumb.png" alt="paper", width = "1000">
+</a>
+	
+<h3>Source Code and Dataset</h3>
+<p> We provide our source code together with the dataset used in the paper at <a href="whiteBalanceData.zip"> here</a>. </p>
+
+<h3>Slides</h3>
+	<p><a href="docs/2016_ICCP.pptx">Presentation slides</a></p>	
+
+	
+</div>
+	
+
+</body>
+</html>

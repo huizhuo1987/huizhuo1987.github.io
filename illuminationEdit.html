@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.video iframe {
+}
+
+body {
+    padding: 50px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.paper {
+    padding: 10px;
+    text-align: left;
+    background: #E7E7E7;
+}	
+.paper h2{
+    margin-top: 40px;
+	font-size: 30px;
+}
+.paper h3{
+    margin-top: 20px;
+	font-size: 20px;
+}
+.video {
+    padding: 10px;
+    text-align: left;
+    background: white;
+}	
+.video h2{
+    margin-top: 40px;
+	font-size: 30px;
+}
+.video h3{
+    margin-top: 20px;
+	font-size: 20px;
+}	
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+	
+.clearfix {
+    overflow: auto;
+}
+
+.img2 {
+    float: center;
+	padding-top:20px;
+	padding-right:20px;
+}	
+
+.img1 {
+	float: center;
+	padding-top: 20px;
+    padding: 20px;
+}
+
+p{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	}
+p.a{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	font-size: 15px;
+	}
+p.b{
+	text-align: justify;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	}
+	}
+h1{
+	font-family:  "Myriad Pro";
+	}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+a {
+	font-family: "Myriad Pro"
+	font-size: 15px;	
+	}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Illuminant Spectra-based Source Separation Using Flash Photography</h1>
+  <p>Real-world lighting often consists of multiple illuminants with different spectra. Separating and manipulating these
+illuminants in post-process is a challenging problem that requires either significant manual input or calibrated scene
+geometry and lighting. In this work, we leverage a flash/noflash image pair to analyze and edit scene illuminants based
+on their spectral differences. We derive a novel physicsbased relationship between color variations in the observed
+flash/no-flash intensities and the spectra and surface shading corresponding to individual scene illuminants. Our
+technique uses this constraint to automatically separate an image into constituent images lit by each illuminant. This
+separation can be used to support applications like white balancing, lighting editing, and RGB photometric stereo,
+where we demonstrate results that outperform state-of-theart techniques on a wide range of images.</p>
+<img class="img2" src="illumination_edit.png" alt="overview", width = "800">
+</div>
+<div class="paper">	
+<h2>Paper</h2>
+<p>
+	Zhuo Hui, <a href="http://www.eecs.harvard.edu/~kalyans/"> Kalyan Sunkavalli</a>, Sunil Hadap, and <a href="http://users.ece.cmu.edu/~saswin/"> Aswin C. Sankaranarayanan</a>
+</p>
+<p>
+	CVPR 2018 (Oral)
+</p>
+<a href="http://imagesci.ece.cmu.edu/files/paper/2018/LightEditing_CVPR18.pdf">
+	<img class="img1" src="cvpr_thumb.png" alt="paper", width = "800">
+</a>
+<h3>Supplementary Materials</h3>
+<p> We provide additional results in the <a href="http://imagesci.ece.cmu.edu/files/paper/2018/LightEditing_CVPR18_Supp.pdf"> supplementary docs</a>. </p>
+</div>
+<div class= "video">
+<h2> Video </h2>	
+<iframe width="854" height="480" src="https://www.youtube.com/embed/7iizopNYJT0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="middle"></iframe>
+</div>
+</body>
+</html>
